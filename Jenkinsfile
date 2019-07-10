@@ -27,10 +27,5 @@ pipeline {
         sh './jenkins/scripts/kill.sh'
       }
     }
-    stage('AfterDeploymentTest') {
-      steps {
-        sh './jenkins/scripts/test.sh'
-      }
-    }
   }
 }
